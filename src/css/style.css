@@ -1,0 +1,215 @@
+:root {
+    --red: #e0342e;
+    --white: #FCFCFC;
+    --gray: #B3C7BA;
+    --black: #050505;
+    --font-size: 1.1rem;
+
+}
+
+* {
+    font-family: 'PT Sans', sans-serif;;
+}
+
+.wrapper {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    max-height: 80px;
+    min-height: 80px;
+    flex-shrink: 0;
+    background-color: var(--red);
+    color: var(--white);
+}
+
+.main-footer-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+}
+
+.main {
+    flex: 1 1 auto;
+    padding: 1rem;
+}
+
+/* FOOTER */
+
+.footer{
+    display: flex;
+    justify-content: center;
+    background-color: var(--red);
+    flex: 0 0 220px;
+    color: var(--white);
+    padding: 15px;
+}
+
+.footer__left-box {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 33.3%;
+    justify-content: center;
+    padding: 15px;
+}
+
+.footer__left-box__title {
+    font-size: 2rem;
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+
+.footer__center-box{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 33.3%;
+    justify-content: center;
+    padding: 15px;
+}
+
+.footer__center-box__cnpj{
+    margin-bottom: 10px;
+}
+
+.footer__center-box__endereco {
+
+}
+
+.footer__right-box{
+    flex-basis: 33.3%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__right-box__title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.footer__right-box__grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.footer__right-box__grid__item {
+    margin-bottom: 5px;
+}
+
+.logo {
+    margin-left: 1.5rem;
+    font-size: 1.6rem;
+}
+
+.menu { 
+    display: flex;
+    margin-right: 1.5rem;
+}
+
+.menu .menu_item {
+    list-style-type: none;
+    margin-left: 1rem;
+    font-size: var(--font-size);
+    cursor: pointer;
+}
+
+
+.banner {
+    height: calc(100vh - 80px);
+    background-color:var(--gray);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner .btn-primary {
+    background-color: var(--red);
+    color: var(--white);
+    border-radius: 0;
+    padding: .5rem 1rem;
+    font-size: 1.2rem;
+    border: 1px solid var(--red);
+    cursor: pointer;
+    width: 230px;
+}
+
+.about{
+    padding: 1rem 4rem;
+}
+
+.about .about_title {
+    text-align: center;
+}
+
+.p {
+    text-align: justify;
+}
+
+.causes{
+    background-color: var(--gray);
+    padding: 1rem 4rem;
+}
+
+.causes .causes_title{
+    text-align: center;
+}
+
+.indicators {
+    padding: 1rem 4rem;
+}
+
+.indicators .indicators_title{
+    text-align: center;
+}
+
+.contact {
+    background-color: var(--gray);
+    padding: 1rem 4rem;
+}
+
+.contact .contact_title{
+    text-align: center;
+}
+
+
+/* PROJETOS */
+
+.projects__project_title {
+    font-size: 2rem;
+    color: var(--red);
+    text-align: center;
+}
+
+
+
+
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track - barra por onde o scroll vai rolar */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+/* Handle - scroll bar em si*/
+::-webkit-scrollbar-thumb {
+    background: gray;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

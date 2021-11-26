@@ -4,7 +4,7 @@
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --out-dir prod"
+    "build": "parcel build src/*.html"
   },
   "devDependencies": {
     "@babel/core": "^7.16.0",

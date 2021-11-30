@@ -1,0 +1,244 @@
+:root {
+    --red: #e0342e;
+    --white: #FCFCFC;
+    --gray: #B3C7BA;
+    --black: #050505;
+    --font-size: 1.1rem;
+
+}
+
+.wrapper {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* start HEADER */
+
+.header {
+    display:flex;
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    max-height: 80px;
+    min-height: 80px;
+    background-color: var(--red);
+    color: var(--white);
+}
+
+.menu { 
+    display: block;
+    position: absolute;
+
+    margin-right: 1.5rem;
+}
+
+.menu .menu_item {
+    list-style-type: none;
+    margin-left: 1rem;
+    font-size: var(--font-size);
+    cursor: pointer;
+}
+
+ /* end HEADER*/
+
+
+/* start MAIN */
+
+ .main-footer-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    position: fixed;
+    top: 80px;
+    height: calc(100vh - 80px);
+    overflow: auto;
+}
+
+.main {
+    flex: 1 1 auto;
+}
+
+/* end MAIN */
+
+/* start FOOTER */
+
+.footer{
+    display: flex;
+    justify-content: center;
+    background-color: var(--red);
+    flex-direction: column;
+    color: var(--white);
+    padding: 15px;
+}
+
+.footer__left-box {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    position: relative;
+    justify-content: center;
+    padding: 45px 15px;
+}
+
+.footer__left-box__title {
+    font-size: 2rem;
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+
+.footer__center-box{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 33.3%;
+    justify-content: center;
+    padding: 65px 15px;
+    border-top: 1px solid var(--white)
+}
+
+.footer__center-box__cnpj{
+    margin-bottom: 10px;
+}
+
+.footer__center-box__endereco {
+
+}
+
+.footer__right-box{
+    flex-basis: 33.3%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 45px 15px;
+    border-top: 1px solid var(--white)
+}
+
+.footer__right-box__title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.footer__right-box__grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.footer__right-box__grid__item {
+    margin-bottom: 5px;
+}
+
+/* end FOOTER */
+
+
+/* start SCROLL */
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track - barra por onde o scroll vai rolar */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+/* Handle - scroll bar em si*/
+::-webkit-scrollbar-thumb {
+    background: gray;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* end SCROLL */
+
+@media only screen and (min-width:320px) { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }
+
+@media only screen and (min-width:480px) { /* smartphones, Android phones, landscape iPhone */ }
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    /* start HEADER */
+
+    .header {
+        display:flex;
+        position: fixed;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+        max-height: 80px;
+        min-height: 80px;
+        background-color: var(--red);
+        color: var(--white);
+    }
+
+    .menu { 
+        display: flex;
+        margin-right: 1.5rem;
+        position: initial;
+    }
+
+    .menu .menu_item {
+        list-style-type: none;
+        margin-left: 1rem;
+        font-size: var(--font-size);
+        cursor: pointer;
+    }
+
+ /* end HEADER*/
+    
+    .footer {
+        flex-direction: row;
+        flex: 0 0 220px;
+    }
+    
+    .footer__left-box {
+        flex-basis: 33.3%;
+        padding: 15px;
+    }
+    
+    .footer__left-box__title {
+    }
+    
+    .footer__center-box{
+        flex-basis: 33.3%;
+        padding: 15px;
+        border: none
+    }
+    
+    .footer__center-box__cnpj{
+    }
+    
+    .footer__center-box__endereco {
+    
+    }
+    
+    .footer__right-box{
+        flex-basis: 33.3%;
+        border: none;
+        padding: 15px
+    }
+    
+    .footer__right-box__title {
+    }
+    
+    .footer__right-box__grid{
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

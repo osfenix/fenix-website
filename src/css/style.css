@@ -12,19 +12,6 @@
 }
 
 
-
-
-
-
-
-.logo {
-    margin-left: 1.5rem;
-    font-size: 1.6rem;
-}
-
-
-
-
 .banner {
     height: calc(100vh - 80px);
     background-color:var(--gray);

@@ -1,4 +1,6 @@
 "use strict";
+
+
 let hamburguer = document.getElementById("hamburguer")
 let nav = document.querySelector("nav");
 console.log(nav);
@@ -9,3 +11,4 @@ hamburguer.addEventListener("click", e => {
     else
         nav.classList.add("nav-displayed");
 })
+

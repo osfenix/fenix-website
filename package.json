@@ -11,5 +11,8 @@
     "@babel/preset-env": "^7.16.0",
     "parcel": "^2.0.1",
     "parcel-optimizer-friendly-urls": "^0.2.0"
+  },
+  "dependencies": {
+    "aos": "^2.3.4"
   }
 }

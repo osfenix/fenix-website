@@ -1,0 +1,121 @@
+:root {
+    --red: #e0342e;
+    --shadow-red: #E2413C;
+    --white: #FCFCFC;
+    --gray: #B3C7BA;
+    --black: #2E2922;
+    --fs-description: 20px;
+}
+
+.contact__title {
+    font-size: 1.5rem;
+    color: var(--white);
+    text-align: center;
+    padding: 0.8rem;
+    letter-spacing: 2px;
+    background-color: var(--shadow-red);
+    font-weight: 500;
+}
+
+
+/*starts Contact Form*/
+.contact_form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact_form_group {
+    padding: 1rem;
+    width: 100%;
+    border: none;
+    background: rgba(46, 41, 34, 0.75);
+}
+
+.contact_form_field{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+    justify-content: space-between;
+    color: var(--white);
+}
+
+.contact_form_field_detail {
+    font-size: 0.7rem;
+    color: var(--gray);
+    margin-left: 1.5rem;
+}
+
+.contact_form_submit {
+    width: 100%;
+    font-size: 1.3rem;
+    background-color: var(--red);
+    color: var(--white);
+    border: none;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25)
+}
+
+.contact_form_submit:hover {
+    background-color: var(--white);
+    color: var(--red);
+    box-shadow: 0px 0px 4px 4px #e0342e;
+    font-weight: bolder;
+}
+/*ends Contact Form*/
+
+/*starts Contact Social Media*/
+.contact_social_media_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    color: var(--shadow-red);
+}
+
+.contact_social_media_container {
+    padding: 1.5rem;
+}
+
+.contact_social_media_link {
+    margin: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--shadow-red);
+}
+
+.contact_social_media_link img {
+    max-width: 48px;
+    max-height: 48px;
+    filter: drop-shadow(4px 4px 4px #2E2922);
+}
+/*ends Contact Social Media*/
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .contact_form{
+        margin: 1rem 0 1rem 0;
+    }
+    
+    .contact_form_group {
+        padding: 1rem;
+        width: 40%;
+        border-radius: 5px;
+        border-color: var(--black);
+        background: rgba(46, 41, 34, 0.75);
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    
+    .contact_social_media_container {
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+   
+}

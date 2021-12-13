@@ -12,3 +12,9 @@ hamburguer.addEventListener("click", e => {
         nav.classList.add("nav-displayed");
 })
 
+//Redirects to index after sending email on contact form
+function redirect() {
+    let back_btn = document.getElementById("sent_back_btn");
+    back_btn= window.location.assign("./index.html")
+}
+

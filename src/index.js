@@ -1,5 +1,5 @@
 "use strict";
-
+AOS.init();
 
 let hamburguer = document.getElementById("hamburguer")
 let nav = document.querySelector("nav");

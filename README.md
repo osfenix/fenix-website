@@ -18,7 +18,7 @@ yarn
 Para rodar o projeto em seu localhost, basta usar o seguinte comando:
 
 ```bash
-yarn parcel src/index.html 
+yarn parcel src/*.html
 # ou
 yarn start
 ```

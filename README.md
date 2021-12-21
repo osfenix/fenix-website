@@ -15,7 +15,7 @@ Após isso, execute o seguinte comando para instalar as dependências do projeto
 yarn
 ```
 
-Para rodar o projeto em seu local host, basta usar o seguinte comando:
+Para rodar o projeto em seu localhost, basta usar o seguinte comando:
 
 ```bash
 yarn parcel src/index.html 

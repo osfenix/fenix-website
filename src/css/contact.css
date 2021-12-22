@@ -52,7 +52,8 @@
     background-color: var(--red);
     color: var(--white);
     border: none;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25)
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: box-shadow 750ms, background-color 750ms, color 750ms;
 }
 
 .contact_form_submit:hover {
@@ -82,16 +83,26 @@
     flex-direction: column;
     align-items: center;
     color: var(--shadow-red);
+    z-index: 0;
 }
 
-.contact_social_media_link img {
+.contact_social_media_img {
     max-width: 48px;
     max-height: 48px;
     filter: drop-shadow(4px 4px 4px #2E2922);
+    transition: filter 750ms;
 }
 
-.contact_social_media_link img:hover {
+.instagram:hover {
     filter: drop-shadow(0px 0px 8px #e0342e);
+}
+
+.facebook:hover {
+    filter: drop-shadow(0px 0px 8px  #3D5A98);
+}
+
+.linkedin:hover {
+    filter: drop-shadow(0px 0px 8px  #0077B5);
 }
 /*ends Contact Social Media*/
 

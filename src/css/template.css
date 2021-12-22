@@ -29,6 +29,7 @@ html {
     height: 80px;
     background-color: var(--red);
     color: var(--white);
+    z-index: 10;
 }
 #hamburguer {
     position: absolute;

@@ -75,6 +75,9 @@ html {
     margin-left: 15px;
     width: 200px;
     height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .logo a {
@@ -82,12 +85,11 @@ html {
 }
 
 .logo-img {
-    width: 100px;
     max-width: 100%;
 }
 
 .nav .nav_item {
-    padding: 25px 0;
+    padding: 25px 10px;
     font-size: var(--font-size);
     cursor: pointer;
     z-index: 1;
@@ -246,7 +248,6 @@ html {
 
     .nav_item {
         list-style-type: none;
-        margin-left: 1rem;
         font-size: var(--font-size);
         cursor: pointer;
         flex:0 0 auto;

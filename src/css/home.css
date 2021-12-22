@@ -124,10 +124,11 @@
     margin-bottom: 16px;
 }
 
-.text-center{
+.center-text{
     text-align: center;
 }
 
+/* start CAUSE SECTION */
 .causes-section{
     background-color: var(--gray);
     padding: 1rem;
@@ -140,6 +141,98 @@
 .causes .causes_title{
     text-align: center;
 }
+
+.cause-card{
+    /*background-color: var(--red);*/
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 2px 2px 2px #a0a0a0;
+    margin-bottom: 16px;
+}
+
+.cause-card__img{
+    max-width: 100%;
+    height: auto;
+}
+
+.cause-card__body {
+    padding: 10px;
+    color: var(--white-text);
+    background-color: var(--red);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* end CAUSE SECTION */
+
+/* start VISION, VALUES AND PURPOSE */
+.vision {
+    background-color: var(--red);
+    color: var(--white);
+    padding: 2rem 1rem;
+}    
+
+.purpose {
+    background-color: var(--white);
+    color: var(--red);
+    padding: 2rem 1rem;
+}
+
+
+.values {
+    background-color: var(--red);
+    color: var(--white);
+    padding: 2rem 1rem;
+}
+
+.value-card {
+    border: 1px solid var(--white);
+    border-radius: 30px;
+    /*box-shadow: var(--shadow-card); */
+    /*width: 80% !important;*/
+    color: var(--red);
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 16px;
+    overflow: hidden;
+    padding: 0 16px 16px 16px;
+    
+}
+
+.value-card > .h2{
+    width: 100%;
+    align-self: center;
+}
+
+.value-card__card_body {
+    flex-grow: 1;
+    width: 100%;
+    margin-bottom: 0;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.value-card__card_body > .p {
+    margin: 0;
+}
+
+.value-card__rounded-img{
+    width: 180px;
+    margin: 16px 0 10px 0;
+}
+
+
+/* end VISION, VALUES AND PURPOSE */
+
 
 .indicators-section {
     padding: 1rem;
@@ -168,7 +261,25 @@
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 600px) {
+    /* START CAUSES SECTION */
+    .cause-card__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+    }
+
+    .cause-card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cause-card__body{
+        flex-grow: 1;
+    }
+
+    /* END CAUSES SECTION */
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
@@ -178,6 +289,11 @@
         text-align: center;
         width: 85%
     } 
+
+    .value-card {
+        width: 85%;
+        margin: 0 auto 16px auto;
+    }
 
     /*
     .about-section__img {
@@ -201,6 +317,22 @@
         width: 80%;
         margin: 0 auto;
     }
+
+    .vision .p{
+        width: 80%;
+        margin: 0 auto;
+    }    
+    
+    .purpose .p{
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    
+    .values .p {
+        width: 80%;
+        margin: 0 auto;
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -214,6 +346,20 @@
     .causes-section {
         
         
+    }
+
+    
+    .vision .p{
+        width: 60%;
+    }    
+    
+    .purpose .p{
+        width: 60%;
+    }
+    
+    
+    .values .p {
+        width: 60%;
     }
 
     .section__content {

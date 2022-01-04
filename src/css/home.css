@@ -22,7 +22,7 @@
     --h1: 44px;
     --h2: 33px;
     --h3: 22px;
-    --p: 18px;
+    --p: 19px;
     --mobile-h1: 30px;
     --mobile-h2: 27px;
     --mobile-h3: 22px;
@@ -82,10 +82,10 @@
     padding: 1rem;
 }
 
-    .about-section__img {
-        max-width: 100%;
-        height: auto;
-    }
+.about-section__img {
+    max-width: 100%;
+    height: auto;
+}
 
 
 .h1 {
@@ -108,6 +108,9 @@
 .white-text{
     color: var(--white-text);
 }
+.black-text {
+    color: var(--black-text);
+}
 
 .h2 {
     font-size: var(--h2);
@@ -127,6 +130,15 @@
 .center-text{
     text-align: center;
 }
+
+/* START OUR-ROLE-SECTION */
+.our-role-section{
+    width: 100%;
+    padding: 1rem;
+}
+
+
+/* END OUR-ROLE-SECTION */
 
 /* start CAUSE SECTION */
 .causes-section{
@@ -190,7 +202,7 @@
 .value-card {
     border: 1px solid var(--white);
     border-radius: 30px;
-    /*box-shadow: var(--shadow-card); */
+    box-shadow: var(--shadow-card);
     /*width: 80% !important;*/
     color: var(--red);
     background-color: var(--white);
@@ -213,12 +225,17 @@
 .value-card__card_body {
     flex-grow: 1;
     width: 100%;
-    margin-bottom: 0;
-    
+    margin-bottom: 0;  
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     
+}
+
+.value-card__card_body > img {
+    max-width: 100%; 
+    margin-bottom: .7rem;
 }
 
 .value-card__card_body > .p {
@@ -262,6 +279,16 @@
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+
+    .values-container {
+        width: 95%;
+        margin: 0 auto;
+    }
+    
+    .values-container img{
+        display: none;
+    }
+
     /* START CAUSES SECTION */
     .cause-card__container {
         display: grid;
@@ -293,6 +320,11 @@
     .value-card {
         width: 85%;
         margin: 0 auto 16px auto;
+    }
+
+    .values-container {
+        width: 100%;
+        margin: 0 auto;
     }
 
     /*
@@ -327,9 +359,25 @@
         width: 80%;
         margin: 0 auto;
     }
+
+    .values-container {
+        width: 85%;
+        max-width: 800px;
+        margin: 0 auto;
+    }
     
     
     .values .p {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .our-role-section > .section__content{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .causes-section > .section__content{
         width: 80%;
         margin: 0 auto;
     }
@@ -360,6 +408,11 @@
     
     .values .p {
         width: 60%;
+    }
+
+    .our-role-section .section__content {
+        width: 60%;
+        margin: 0 auto;
     }
 
     .section__content {

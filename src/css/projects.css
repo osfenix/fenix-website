@@ -1,14 +1,49 @@
 :root {
+    /* Cores */
     --red: #e0342e;
     --shadow-red: #E2413C;
     --white: #FCFCFC;
-    --gray: #B3C7BA;
-    --black: #333333;
+    --gray: #f0f0f0;
+    --black: #2E2922;
     --fs-description: 20px;
-    --h1-font: 3rem;
-    --h2-font: 2rem;
-}
 
+    --red-text: #af0e0e;
+    --black-text: #2E2922;
+    --white-text: #FCFCFC;
+
+    /* Fontes */
+    --h1-font: 'Oswald', sans-serif;
+    --h2-font: 'PT Sans', sans-serif;
+    --h3-font: 'PT Sans', sans-serif;
+    --p-font: 'PT Sans', sans-serif;
+
+    /* Tipografia*/
+    --h1-banner: 56px;
+    --h1: 44px;
+    --h2: 33px;
+    --h3: 22px;
+    --p: 19px;
+    --mobile-h1: 30px;
+    --mobile-h2: 27px;
+    --mobile-h3: 22px;
+    --mobile-p: 18px;
+    --h1-line-height: calc(var(--h1) * 1.2);
+    --h2-line-height: calc(var(--h2) * 1.5);
+    --h3-line-height: calc(var(--h3) * 1.5);
+    --p-line-height: calc(var(--p) * 1.5);
+
+    /* Botões*/
+    --normal-btn: 44px;
+    --large-btn: 54px;
+    --extra-large-btn: 64px;
+    --border-radius-normal-btn: 5px;
+    --border-radius-large-btn: 10px;
+    --border-radius-extra-large-btn: 15px;
+
+    /* Sombras */
+    --shadow-input: 1px 1px 2px var(--gray);
+    --shadow-card: 2px 2px 2px var(--gray);
+}
 .projects__project-section{
     padding: 0 0 1rem 0;
 }

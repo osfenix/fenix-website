@@ -1,7 +1,8 @@
 "use strict";
 AOS.init();
 
-let hamburguer = document.getElementById("hamburguer")
+let hamburguer = document.getElementById("hamburguer");
+console.log('hamburguer', hamburguer)
 let nav = document.querySelector("nav");
 console.log(nav);
 
@@ -15,6 +16,10 @@ hamburguer.addEventListener("click", e => {
 //Redirects to index after sending email on contact form
 function redirect() {
     let back_btn = document.getElementById("sent_back_btn");
-    back_btn= window.location.assign("./index.html")
+    back_btn = window.location.assign("./index.html")
 }
 
+
+$(document).ready(function () {
+    $(".owl-carousel").owlCarousel();
+});

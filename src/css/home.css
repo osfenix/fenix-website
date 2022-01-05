@@ -87,6 +87,7 @@
     height: auto;
 }
 
+/* STARTS TIPOGRAPHY */
 
 .h1 {
     font-size: var(--h1);
@@ -130,6 +131,8 @@
 .center-text{
     text-align: center;
 }
+
+/* ENDS TIPOGRAPHY */
 
 /* START OUR-ROLE-SECTION */
 .our-role-section{

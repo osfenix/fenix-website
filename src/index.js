@@ -26,7 +26,30 @@ function redirect() {
     back_btn = window.location.assign("./index.html")
 }
 
-
-$(document).ready(function () {
-    $(".owl-carousel").owlCarousel();
-});
+var filename = location.pathname.split('/').pop();
+console.log('filename:', filename)
+if (filename === 'index.html') {
+    $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+            center: true,
+            loop: true,
+            responsive: {
+                // breakpoint from 0 up
+                0: {
+                    items: 1,
+                    nav: true
+                },
+                // breakpoint from 480 up
+                480: {
+                    items: 2,
+                    nav: true
+                },
+                // breakpoint from 768 up
+                768: {
+                    items: 3,
+                    nav: true
+                }
+            }
+        });
+    });
+}

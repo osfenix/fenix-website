@@ -212,6 +212,7 @@ html {
     margin-top: 80px;
     height: calc(100vh - 80px);
     width: 100%;
+    min-height: calc(100vh - 80px);
 }
 
 .main {
@@ -230,6 +231,7 @@ html {
     color: var(--white);
     padding: 15px;
     flex: 0 1 auto;
+    margin-top: auto;
 }
 
 .footer__left-box {

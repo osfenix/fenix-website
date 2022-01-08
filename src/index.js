@@ -57,8 +57,8 @@ if (filename === 'index.html') {
 // Máscara para o campo telefone
 const tel = document.getElementById('tel') // Seletor do campo de telefone
 
-tel.addEventListener('keypress', (e) => mascaraTelefone(e.target.value)) // Dispara quando digitado no campo
-tel.addEventListener('change', (e) => mascaraTelefone(e.target.value)) // Dispara quando autocompletado o campo
+tel.addEventListener('keydown', (e) => mascaraTelefone(e.target.value)) // Dispara quando digitado no campo
+tel.addEventListener('input', (e) => mascaraTelefone(e.target.value)) // Dispara quando autocompletado o campo
 
 const mascaraTelefone = (valor) => {
     valor = valor.replace(/\D/g, "")

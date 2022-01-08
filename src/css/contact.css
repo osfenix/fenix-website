@@ -44,6 +44,12 @@
     max-width: 100%;
 }
 
+.contact_label {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
 .contact__input {
     border-radius: 5px;
     font-size: 1.1rem;
@@ -51,11 +57,13 @@
     border: none;
     color: #495057;
     background-color: #f3f3f3;
-    height: 50px;
+    height: 44px;
     padding: 0.375rem 0.75rem;
     border: 1px solid #f3f3f3;
     max-width: 100%;
+    margin-bottom: 5px;
 }
+
 
 
 .contact__textarea {

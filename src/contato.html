@@ -43,23 +43,27 @@
                     <fieldset class="contact_form_group">
 
                         <div class="contact_form_field">
-                            <input class="contact__input" placeholder="Seu nome" type="text" id="nome" name="nome"
-                                required>
+                            <label class="contact_label" for="nome">Nome <span class="red">*</span></label>
+                            <input class="contact__input" type="text" id="nome" name="nome" required>
                         </div>
                         <div class="contact_form_field">
-                            <input class="contact__input" placeholder="E-mail" type="email" id="email" name="email"
-                                required>
+                            <label class="contact_label" for="nome">E-mail <span class="red">*</span></label>
+                            <input class="contact__input" type="email" id="email" name="email" required>
                         </div>
                         <div class="contact_form_field">
-                            <input class="contact__input" placeholder="Telefone" type="tel" id="tel" name="tel"
-                                maxlength="15" pattern="\(\d{2}\)\s*\d{5}-\d{4}" required>
+                            <label class="contact_label" for="nome">Telefone <span class="red">*</span></label>
+                            <input class="contact__input" type="tel" id="tel" name="tel" maxlength="15"
+                                pattern="\(\d{2}\)\s*\d{4,5}-\d{4,5}" required>
                         </div>
                         <div class="contact_form_field">
-                            <input class="contact__input" placeholder="Assunto" type="text" id="assunto" name="assunto">
+                            <label class="contact_label" for="nome">Assunto</label>
+                            <input class="contact__input" type="text" id="assunto" name="assunto">
                         </div>
                         <div class="contact_form_field">
-                            <textarea class="contact__textarea" placeholder="Digite a sua mensagem" name="mensagem"
-                                id="mensagem" rows="10" required></textarea>
+                            <label class="contact_label" for="nome">Digite a sua mensagem <span
+                                    class="red">*</span></label>
+                            <textarea class="contact__textarea" name="mensagem" id="mensagem" rows="10"
+                                required></textarea>
                         </div>
                         <input type="hidden" name="_next" value="https://www.fenixcentrocultural.org.br/enviado">
                         <button class="contact_form_submit" type="submit">Enviar</button>

@@ -45,7 +45,8 @@
     --shadow-card: 2px 2px 2px var(--gray);
 }
 .projects__project-section{
-    padding: 0 0 1rem 0;
+    padding: 0.3rem 1rem;
+
 }
 
 .projects__title {
@@ -70,7 +71,6 @@
 .project__img {
     max-width: 100%;
     height: auto;
-    padding: 0 0.8rem;
 }
 
 .project__description{
@@ -80,17 +80,30 @@
     color: var(--black);
 }
 
+.project__body {
+    
+}
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    
+    .projects__project-section{
+        padding-bottom: 1rem;
+        width: 95%;
+        margin: 0 auto;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 
     .projects__project-section{
-        padding: 0 12% 1rem 12%;
+        width: 85%;
     }
+
+    .main {
+        flex-direction: column;
+    }
+
 
     .projects__title {
         font-size: 3rem;
@@ -101,13 +114,28 @@
     }
 
     .project__img {
-        max-width: 50%;
+        max-width: 70%;
         height: auto;
-        float: left;
+        margin: 0 auto;
+        display: block;
+        /* float: left; */
         padding: 5px 10px 0px 0px;
     }
+    */
 
     .project__description{
         padding: 0;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .projects__project-section{
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .projects__project-section{
+        width: 60%;
     }
 }

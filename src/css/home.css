@@ -85,6 +85,7 @@
 .about-section__img {
     max-width: 100%;
     height: auto;
+    filter: drop-shadow(4px 4px 4px #a0a0a0);
 }
 
 /* STARTS TIPOGRAPHY */
@@ -320,6 +321,16 @@
         width: 85%
     } 
 
+    .about-section{
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .our-role-section {
+        width: 85%;
+        margin: 0 auto;
+    }
+
     .value-card {
         width: 85%;
         margin: 0 auto 16px auto;
@@ -350,7 +361,6 @@
     } 
     .about-section{
         width: 80%;
-        margin: 0 auto;
     }
 
     .vision .p{

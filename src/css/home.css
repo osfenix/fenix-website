@@ -145,13 +145,9 @@
 /* END OUR-ROLE-SECTION */
 
 /* start CAUSE SECTION */
-.causes-section{
+.causes-section {
     background-color: var(--gray);
     padding: 1rem;
-}
-
-.causes-section__content {
-
 }
 
 .causes .causes_title{
@@ -404,12 +400,6 @@
         margin: 0 auto;
     }
 
-    .causes-section {
-        
-        
-    }
-
-    
     .vision .p{
         width: 60%;
     }    
@@ -431,9 +421,6 @@
     .section__content {
         width: 60%;
         margin: 0 auto;
-    }
-
-    .contact-section {
     }
 
     .indicators-section {

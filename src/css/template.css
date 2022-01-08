@@ -260,10 +260,6 @@ html {
     margin-bottom: 10px;
 }
 
-.footer__center-box__endereco {
-
-}
-
 .footer__right-box{
     flex-basis: 33.3%;
     padding: 15px;
@@ -363,20 +359,11 @@ html {
         padding: 15px;
     }
     
-    .footer__left-box__title {
-    }
     
     .footer__center-box{
         flex-basis: 33.3%;
         padding: 15px;
         border: none
-    }
-    
-    .footer__center-box__cnpj{
-    }
-    
-    .footer__center-box__endereco {
-    
     }
     
     .footer__right-box{
@@ -385,11 +372,6 @@ html {
         padding: 15px
     }
     
-    .footer__right-box__title {
-    }
-    
-    .footer__right-box__grid{
-    }
 
     /* start SCROLL */
 

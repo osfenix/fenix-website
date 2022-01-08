@@ -21,10 +21,10 @@ headerLinks.forEach(i => {
 
 
 //Redirects to index after sending email on contact form
-function redirect() {
-    let back_btn = document.getElementById("sent_back_btn");
-    back_btn = window.location.assign("./index.html")
-}
+let backBtn = document.getElementById("sent_back_btn");
+if (backBtn) {backBtn.addEventListener("click", e => {
+    window.location.assign("./index.html")
+})};
 
 var filename = location.pathname.split('/').pop();
 console.log('filename:', filename)

@@ -173,7 +173,6 @@ html {
     height: 80px;
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
 .logo a {
@@ -186,7 +185,7 @@ html {
 
 .nav .nav_item {
     padding: 25px 10px;
-    font-size: var(--font-size);
+    font-size: var(--mobile-p);
     cursor: pointer;
     z-index: 1;
     display: block;
@@ -216,6 +215,7 @@ html {
 
 .main {
     flex: 1 1 auto;
+    width: 100%;
 }
 
 /* end MAIN */
@@ -286,7 +286,10 @@ html {
 /* end FOOTER */
 
 
-@media only screen and (min-width:320px) { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }
+@media only screen and (min-width:320px) { 
+    /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+    
+ }
 
 @media only screen and (min-width:480px) { /* smartphones, Android phones, landscape iPhone */ }
 
@@ -338,7 +341,7 @@ html {
 
     .nav_item {
         list-style-type: none;
-        font-size: var(--font-size);
+        font-size: var(--mobile-p);
         cursor: pointer;
         flex:0 0 auto;
         padding:0 10px;

@@ -19,14 +19,15 @@
 <body>
     <div class="wrapper">
         <header class="header">
-            <div class="logo"><a href="index.html">
+            <div class="logo">
+                <a href="index.html">
                     <img width="200px" height="auto" class="logo-img" src="/src/assets/white-logo.png" alt="logo">
                 </a>
             </div>
             <label id="hamburguer" for="toggle"><i class="fas fa-bars"></i></label>
             <nav class="nav">
-                <a href="index.html#about" class="nav_item">O Instituto</a>
-                <a href="index.html#causes" class="nav_item">Causas</a>
+                <a href="index.html#instituto" class="nav_item">O Instituto</a>
+                <a href="index.html#causas" class="nav_item">Causas</a>
                 <a href="projetos.html" class="nav_item">Projetos</a>
                 <a class="nav_item">Doação</a>
                 <a href="contato.html" class="nav_item">Contato</a>
@@ -41,27 +42,28 @@
                     method="POST">
                     <fieldset class="contact_form_group">
 
-
                         <div class="contact_form_field">
-                            <label for="nome">Nome*:</label>
-                            <input type="text" id="nome" name="nome" required>
+                            <label class="contact_label" for="nome">Nome <span class="red">*</span></label>
+                            <input class="contact__input" type="text" id="nome" name="nome" required>
                         </div>
                         <div class="contact_form_field">
-                            <label for="email">E-mail*:</label>
-                            <input type="email" id="email" name="email" required>
+                            <label class="contact_label" for="nome">E-mail <span class="red">*</span></label>
+                            <input class="contact__input" type="email" id="email" name="email" required>
                         </div>
                         <div class="contact_form_field">
-                            <label for="tel">Telefone: <span class="contact_form_field_detail">apenas
-                                    números</span></label>
-                            <input type="tel" id="tel" name="tel" pattern="[0-9]{8,12}" minlength="8">
+                            <label class="contact_label" for="nome">Telefone <span class="red">*</span></label>
+                            <input class="contact__input" type="tel" id="tel" name="tel" maxlength="15"
+                                pattern="\(\d{2}\)\s*\d{4,5}-\d{4,5}" required>
                         </div>
                         <div class="contact_form_field">
-                            <label for="assunto">Assunto:</label>
-                            <input type="text" id="assunto" name="assunto">
+                            <label class="contact_label" for="nome">Assunto</label>
+                            <input class="contact__input" type="text" id="assunto" name="assunto">
                         </div>
                         <div class="contact_form_field">
-                            <label for="mensagem">Mensagem*:</label>
-                            <textarea name="mensagem" id="mensagem" cols="30" rows="10" required></textarea>
+                            <label class="contact_label" for="nome">Digite a sua mensagem <span
+                                    class="red">*</span></label>
+                            <textarea class="contact__textarea" name="mensagem" id="mensagem" rows="10"
+                                required></textarea>
                         </div>
                         <input type="hidden" name="_next" value="https://www.fenixcentrocultural.org.br/enviado">
                         <button class="contact_form_submit" type="submit">Enviar</button>

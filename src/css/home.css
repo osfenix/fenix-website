@@ -85,6 +85,7 @@
 .about-section__img {
     max-width: 100%;
     height: auto;
+    filter: drop-shadow(4px 4px 4px #a0a0a0);
 }
 
 /* STARTS TIPOGRAPHY */
@@ -144,13 +145,9 @@
 /* END OUR-ROLE-SECTION */
 
 /* start CAUSE SECTION */
-.causes-section{
+.causes-section {
     background-color: var(--gray);
     padding: 1rem;
-}
-
-.causes-section__content {
-
 }
 
 .causes .causes_title{
@@ -320,6 +317,16 @@
         width: 85%
     } 
 
+    .about-section{
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .our-role-section {
+        width: 85%;
+        margin: 0 auto;
+    }
+
     .value-card {
         width: 85%;
         margin: 0 auto 16px auto;
@@ -350,7 +357,6 @@
     } 
     .about-section{
         width: 80%;
-        margin: 0 auto;
     }
 
     .vision .p{
@@ -394,12 +400,6 @@
         margin: 0 auto;
     }
 
-    .causes-section {
-        
-        
-    }
-
-    
     .vision .p{
         width: 60%;
     }    
@@ -421,9 +421,6 @@
     .section__content {
         width: 60%;
         margin: 0 auto;
-    }
-
-    .contact-section {
     }
 
     .indicators-section {

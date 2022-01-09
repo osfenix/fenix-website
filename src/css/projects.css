@@ -68,6 +68,10 @@
     letter-spacing: 1px;
 }
 
+.project__body {
+    margin-top: 1rem;
+}
+
 .project__img {
     max-width: 100%;
     height: auto;

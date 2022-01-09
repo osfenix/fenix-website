@@ -163,6 +163,8 @@
     overflow: hidden;
     box-shadow: 2px 2px 2px #a0a0a0;
     margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
 }
 
 .cause-card__img{

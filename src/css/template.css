@@ -225,6 +225,7 @@ html {
 .footer{
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: var(--red);
     flex-direction: column;
     color: var(--white);
@@ -282,9 +283,14 @@ html {
 
 .footer__right-box__grid__item {
     margin-bottom: 5px;
-    color: inherit;
+    color: var(--white);
+    transition: margin-left .2s;
 }
 
+.footer__right-box__grid__item:hover {
+    margin-bottom: 5px;
+    margin-left: 4px;
+}
 /* end FOOTER */
 
 

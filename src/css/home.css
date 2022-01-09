@@ -71,6 +71,9 @@
     cursor: pointer;
     width: 280px;
     transition: background-color .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .btn-primary:hover {

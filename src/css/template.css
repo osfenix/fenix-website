@@ -225,7 +225,6 @@ html {
 .footer{
     display: flex;
     justify-content: center;
-    align-items: center;
     background-color: var(--red);
     flex-direction: column;
     color: var(--white);

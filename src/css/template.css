@@ -277,10 +277,12 @@ html {
 .footer__right-box__grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    list-style-type: none;
 }
 
 .footer__right-box__grid__item {
     margin-bottom: 5px;
+    color: inherit;
 }
 
 /* end FOOTER */

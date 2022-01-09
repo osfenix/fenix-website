@@ -22,7 +22,7 @@
     --h1: 44px;
     --h2: 33px;
     --h3: 22px;
-    --p: 19px;
+    --p: 18px;
     --mobile-h1: 33px;
     --mobile-h2: 27px;
     --mobile-h3: 22px;
@@ -60,7 +60,7 @@
 }
 
 .projects__project_title {
-    font-size: 1.3rem;
+    font-size: var(--h2);
     text-align: center;
     padding: 0.8rem 0 0.5rem 0;
     color: var(--black);
@@ -71,6 +71,9 @@
 .project__img {
     max-width: 100%;
     height: auto;
+    filter: drop-shadow(4px 4px 4px #a0a0a0);
+    margin: auto;
+    display: block;
 }
 
 .project__description{
@@ -80,12 +83,23 @@
     color: var(--black);
 }
 
+@media only screen and (min-width:480px) { 
+    /* smartphones, Android phones, landscape iPhone */
+    .project__img {
+        max-width: 85%;
+    }
+}
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
     .projects__project-section{
         padding-bottom: 1rem;
         width: 95%;
         margin: 0 auto;
+    }
+
+    .project__img {
+        max-width: 75%;
     }
 }
 
